@@ -6,7 +6,7 @@
 
 ## About ##
 
-Simple django app for displaying a contact form, reciving alerts emails and keep the messages in the admin site.
+Simple Django app for displaying a contact form, receiving alerts emails, and keep the messages in the admin site.
 
 ## Prerequisites ##
 
@@ -35,7 +35,7 @@ Add the view to your urls.py
 
 You can set the template using **ContactUsFormView.as_view(template='my_template.html')** or redefine **contact_us/contact_form.html**
 
-By default the form will redirect to /thanks/ unless you override the success_url or send a next attribute in the GET.
+By default, the form will redirect to /thanks/ unless you override the success_url or send the next attribute in the GET.
 
 Optionally you can add the model to the admin, so you can see the messages:
 
@@ -44,7 +44,6 @@ Optionally you can add the model to the admin, so you can see the messages:
     from contact_us.models import SimpleContact
     
     admin.site.register(SimpleContact, ContactUsAdmin)
-
 
 
 
